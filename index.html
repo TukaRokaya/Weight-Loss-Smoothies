@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Loss Smoothies</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #a8e063 0%, #56ab2f 100%);
+        }
+        .smoothie-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .nutrition-fact {
+            transition: all 0.3s ease;
+        }
+        .nutrition-fact:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <i class="fas fa-blender text-green-600 text-2xl mr-2"></i>
+                <span class="text-xl font-bold text-green-800">SmoothieFit</span>
+            </div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#recipes" class="text-gray-700 hover:text-green-600 font-medium">Recipes</a>
+                <a href="#benefits" class="text-gray-700 hover:text-green-600 font-medium">Benefits</a>
+                <a href="#nutrition" class="text-gray-700 hover:text-green-600 font-medium">Nutrition</a>
+                <a href="#testimonials" class="text-gray-700 hover:text-green-600 font-medium">Success Stories</a>
+            </div>
+            <button class="md:hidden text-gray-700">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                    Weight Loss Smoothies
+                </h1>
+                <h2 class="text-xl md:text-2xl font-medium mb-8">
+                    33 Healthy and Delicious Smoothie Recipes to Boost Your Metabolism, Burn Fat and Lose Weight Fast
+                </h2>
+                <p class="text-lg mb-8 opacity-90">
+                    Discover the ultimate collection of fat-burning smoothies designed to accelerate your weight loss journey while keeping you energized and satisfied.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                   <a href="https://amzn.to/4lOfl42"> <button class="bg-white text-green-700 hover:bg-gray-100 font-bold py-3 px-6 rounded-full shadow-lg transition duration-300">
+                        Get Order Now <i class="fas fa-arrow-right ml-2"></i>
+                    </button></a>
+                    <button class="border-2 border-white text-white hover:bg-white hover:text-green-700 font-bold py-3 px-6 rounded-full transition duration-300">
+                        <i class="fas fa-play mr-2"></i> Watch Demo
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <img src="h.jpg" 
+                         alt="Green Smoothie" 
+                         class="rounded-2xl shadow-2xl w-full max-w-md border-8 border-white">
+                    <div class="absolute -bottom-6 -right-6 bg-yellow-400 text-yellow-900 px-4 py-2 rounded-full font-bold shadow-lg">
+                        <i class="fas fa-bolt mr-2"></i> Boosts Metabolism
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Recipes -->
+    <section id="recipes" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Popular Fat-Burning Smoothies</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Try these top-rated recipes from our collection of 33 weight loss smoothies</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Recipe 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg smoothie-card transition duration-300">
+                    <div class="relative">
+                        <img src="mm.webp" 
+                             alt="Green Detox Smoothie" 
+                             class="w-full h-64 object-cover">
+                        <div class="absolute top-4 right-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-bold">
+                            <i class="fas fa-fire mr-1"></i> 245 kcal
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Green Detox Blast</h3>
+                        <p class="text-gray-600 mb-4">Kale, spinach, green apple, lemon, chia seeds, and coconut water</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex">
+                                <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded mr-2">Detox</span>
+                                <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Low-cal</span>
+                            </div>
+                            <button class="text-green-600 hover:text-green-800 font-medium">
+                                View Recipe <i class="fas fa-chevron-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recipe 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg smoothie-card transition duration-300">
+                    <div class="relative">
+                        <img src="h.jpg" 
+                             alt="Berry Fat Burner" 
+                             class="w-full h-64 object-cover">
+                        <div class="absolute top-4 right-4 bg-pink-600 text-white px-3 py-1 rounded-full text-sm font-bold">
+                            <i class="fas fa-fire mr-1"></i> 280 kcal
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Berry Fat Burner</h3>
+                        <p class="text-gray-600 mb-4">Mixed berries, Greek yogurt, flaxseeds, almond milk, and cinnamon</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex">
+                                <span class="bg-pink-100 text-pink-800 text-xs font-medium px-2.5 py-0.5 rounded mr-2">Antioxidants</span>
+                                <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">Protein</span>
+                            </div>
+                            <button class="text-green-600 hover:text-green-800 font-medium">
+                                View Recipe <i class="fas fa-chevron-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Recipe 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg smoothie-card transition duration-300">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" 
+                             alt="Tropical Fat Melter" 
+                             class="w-full h-64 object-cover">
+                        <div class="absolute top-4 right-4 bg-orange-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                            <i class="fas fa-fire mr-1"></i> 265 kcal
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Tropical Fat Melter</h3>
+                        <p class="text-gray-600 mb-4">Pineapple, mango, coconut milk, ginger, and turmeric</p>
+                        <div class="flex justify-between items-center">
+                            <div class="flex">
+                                <span class="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded mr-2">Metabolism</span>
+                                <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">Digestion</span>
+                            </div>
+                            <button class="text-green-600 hover:text-green-800 font-medium">
+                                View Recipe <i class="fas fa-chevron-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full shadow-lg transition duration-300">
+                    View All 33 Recipes <i class="fas fa-book-open ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Why Smoothies Help You Lose Weight</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Scientifically-proven benefits of incorporating smoothies into your weight loss plan</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md text-center">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-bolt text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Boosts Metabolism</h3>
+                    <p class="text-gray-600">Certain ingredients like green tea, ginger, and cayenne pepper can increase your metabolic rate by up to 10%.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-apple-alt text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Nutrient Density</h3>
+                    <p class="text-gray-600">Packed with vitamins, minerals, and antioxidants while being low in calories to support fat loss.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md text-center">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-utensils text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Meal Replacement</h3>
+                    <p class="text-gray-600">Perfect for controlled portion sizes while keeping you full with fiber and protein.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-white rounded-xl shadow-lg overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 p-8 md:p-12">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">The Science Behind Weight Loss Smoothies</h3>
+                        <p class="text-gray-600 mb-6">Our recipes are carefully formulated based on nutritional science to maximize fat burning while providing essential nutrients.</p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">High fiber content slows digestion and reduces hunger</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Protein-rich ingredients preserve muscle mass during weight loss</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Low glycemic index prevents blood sugar spikes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <span class="text-gray-700">Thermogenic ingredients increase calorie burn</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="mm.webp" 
+                             alt="Nutritional Science" 
+                             class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nutrition Facts -->
+    <section id="nutrition" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Nutritional Powerhouses</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Key ingredients that make our smoothies effective for weight loss</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                <div class="bg-green-50 rounded-lg p-4 text-center nutrition-fact">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-leaf text-green-600 text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-800">Leafy Greens</h4>
+                    <p class="text-sm text-gray-600 mt-1">Low-calorie, high-nutrient density</p>
+                </div>
+                
+                <div class="bg-blue-50 rounded-lg p-4 text-center nutrition-fact">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-seedling text-blue-600 text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-800">Chia Seeds</h4>
+                    <p class="text-sm text-gray-600 mt-1">High fiber, omega-3 fatty acids</p>
+                </div>
+                
+                <div class="bg-yellow-50 rounded-lg p-4 text-center nutrition-fact">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-ice-cream text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-800">Greek Yogurt</h4>
+                    <p class="text-sm text-gray-600 mt-1">High protein, probiotics</p>
+                </div>
+                
+                <div class="bg-red-50 rounded-lg p-4 text-center nutrition-fact">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-pepper-hot text-red-600 text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-800">Cayenne</h4>
+                    <p class="text-sm text-gray-600 mt-1">Boosts metabolism</p>
+                </div>
+                
+                <div class="bg-purple-50 rounded-lg p-4 text-center nutrition-fact">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-apple-alt text-purple-600 text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-800">Berries</h4>
+                    <p class="text-sm text-gray-600 mt-1">Antioxidants, low sugar</p>
+                </div>
+                
+                <div class="bg-orange-50 rounded-lg p-4 text-center nutrition-fact">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-mortar-pestle text-orange-600 text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-800">Turmeric</h4>
+                    <p class="text-sm text-gray-600 mt-1">Anti-inflammatory</p>
+                </div>
+                
+                <div class="bg-pink-50 rounded-lg p-4 text-center nutrition-fact">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-water text-pink-600 text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-800">Coconut Water</h4>
+                    <p class="text-sm text-gray-600 mt-1">Electrolytes, low-cal</p>
+                </div>
+                
+                <div class="bg-indigo-50 rounded-lg p-4 text-center nutrition-fact">
+                    <div class="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-blender text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h4 class="font-bold text-gray-800">Customizable</h4>
+                    <p class="text-sm text-gray-600 mt-1">Tailor to your needs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-green-700 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Start Your Weight Loss Journey Today</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto opacity-90">Get instant access to all 33 delicious smoothie recipes designed to help you lose weight fast and keep it off.</p>
+            
+            <div class="max-w-4xl mx-auto bg-white rounded-xl shadow-2xl overflow-hidden">
+                <div class="md:flex">
+                    <div class="md:w-1/2 p-8 md:p-12 text-gray-800">
+                        <h3 class="text-2xl font-bold mb-4">Weight Loss Smoothie Recipe Book</h3>
+                        <ul class="space-y-3 text-left mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                                <span>33 carefully crafted smoothie recipes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                                <span>Nutritional breakdown for each recipe</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                                <span>7-day meal plan for fast results</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                                <span>Shopping lists and prep guides</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                                <span>Bonus: Smoothie detox guide</span>
+                            </li>
+                        </ul>
+                        <div class="text-3xl font-bold text-green-700 mb-4">$19.99</div>
+                    </div>
+                    <div class="md:w-1/2 bg-green-800 p-8 md:p-12 flex flex-col justify-center">
+                        <h3 class="text-2xl font-bold mb-6">Get Your Copy Now</h3>
+                        <form class="space-y-4">
+                            <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-lg bg-green-700 border border-green-600 focus:outline-none focus:ring-2 focus:ring-green-400">
+                            <input type="email" placeholder="Email Address" class="w-full px-4 py-3 rounded-lg bg-green-700 border border-green-600 focus:outline-none focus:ring-2 focus:ring-green-400">
+                            <button class="w-full bg-white text-green-700 hover:bg-gray-100 font-bold py-3 px-6 rounded-lg shadow-lg transition duration-300">
+                                Download Now <i class="fas fa-arrow-down ml-2"></i>
+                            </button>
+                        </form>
+                        <div class="mt-6 text-sm opacity-80">
+                            <i class="fas fa-lock mr-2"></i> Secure payment. 30-day money back guarantee.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-blender text-green-500 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold">SmoothieFit</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Helping thousands of people achieve their weight loss goals through delicious, nutritious smoothies.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-pinterest-p"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Recipes</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Green Smoothies</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Berry Smooth</a></li>
+                    </ul></div>
+                     <a href="https://amzn.to/4lOfl42"> <button class="bg-white text-green-700 hover:bg-gray-100 font-bold py-3 px-6 rounded-full shadow-lg transition duration-300">
+                        Get Order Now <i class="fas fa-arrow-right ml-2"></i>
+</body>
+</html>
